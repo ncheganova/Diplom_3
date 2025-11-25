@@ -34,4 +34,16 @@ public class UserSteps {
                 .then()
                 .log().all();
     }
+    @Step("Логин пользователя")
+    public static Response loginUser(UserModel userModel) {
+        return given()
+                .log().all()
+                .contentType(ContentType.JSON)
+                .body(userModel)
+                .when()
+                .post(LOGIN_USER_ENDPOINT)
+                .then()
+                .log().all()
+                .extract().response();
+    }
 }
