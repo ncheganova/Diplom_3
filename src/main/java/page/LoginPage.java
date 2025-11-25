@@ -14,8 +14,8 @@ public class LoginPage {
     public static final String LOGIN_URL = "https://stellarburgers.education-services.ru/login";
 
     private By recoverPasswordBtn = By.xpath(".//a[text()='Восстановить пароль']");
-    private By emailLoginInput = By.xpath(".//fieldset[1]/div/div/input");
-    private By passwordloginInput = By.xpath(".//fieldset[2]/div/div/input");
+    private By emailLoginInput = By.xpath(".//input[@name='name']");
+    private By passwordloginInput = By.xpath(".//input[@name='Пароль']");
     private By enterBtn = By.xpath(".//button[text()='Войти']");
 
     public LoginPage(WebDriver driver) {

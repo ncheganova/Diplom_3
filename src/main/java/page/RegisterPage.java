@@ -8,11 +8,11 @@ public class RegisterPage {
 
     public static final String REGISTER_URL = "https://stellarburgers.education-services.ru/register";
 
-    private By nameInput = By.xpath(".//fieldset[1]/div/div/input");
-    private By emailInput = By.xpath(".//fieldset[2]/div/div/input");
-    private By passwordInput = By.xpath(".//fieldset[3]/div/div/input");
+    private By nameInput = By.xpath(".//div[label[text()='Имя']]/input");
+    private By emailInput = By.xpath(".//div[label[text()='Email']]/input");
+    private By passwordInput = By.xpath(".//div[label[text()='Пароль']]/input");
     private By registerBtn = By.xpath(".//button[text()='Зарегистрироваться']");
-    private By wrongPasswordMessage = By.xpath(".//fieldset[3]/div/p");
+    private By wrongPasswordMessage = By.xpath(".//p[text()='Некорректный пароль']");
     private By enterBtn = By.xpath(".//a[text()='Войти']");
 
     public RegisterPage(WebDriver driver) {
