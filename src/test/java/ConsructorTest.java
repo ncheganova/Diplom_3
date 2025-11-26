@@ -20,7 +20,7 @@ public class ConsructorTest extends BaseTest{
     public void clickSoucesBtnSelectSouces() {
         mainPage.openMainPage();
         mainPage.clickSaucesBtnBtn();
-        assertTrue("Вкладка Булки неактивна", mainPage.isSousesSelect());
+        assertTrue("Вкладка Соусы неактивна", mainPage.isSousesSelect());
     }
     @DisplayName("Переход к разделу Начинки")
     @Description("Проверяет, что при клике на вкладку Начинки, вкладка становится активной")
@@ -28,6 +28,6 @@ public class ConsructorTest extends BaseTest{
     public void clickFillingsBtnSelectFillings() {
         mainPage.openMainPage();
         mainPage.clickFillingsBtnBtn();
-        assertTrue("Вкладка Булки неактивна", mainPage.isFillingsSelect());
+        assertTrue("Вкладка Начинки неактивна", mainPage.isFillingsSelect());
     }
 }
